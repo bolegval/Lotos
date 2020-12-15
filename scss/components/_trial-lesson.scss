@@ -1,0 +1,80 @@
+.trial-lesson {
+    &__container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        background: url("/img/trial.png") 14% no-repeat;
+    }
+
+    &__content {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 52%;
+    }
+
+    &__form {
+        max-width: 440px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+    }
+
+    &__title {
+        max-width: 80%;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 48px;
+
+        & span {
+            @include text-gradient;
+
+            font-size: 80px;  
+        }
+    }
+
+    &__desc {
+        line-height: 2;
+        margin-bottom: 28px;
+    }
+
+    &__input {
+        padding: 23px 0;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6); 
+        outline: none;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__submit {
+        @include form-button;
+
+        margin: 42px 0 29px;
+
+        & span {
+            @include envelope
+        }
+    }
+
+    &__consent {
+        max-width: 70%;
+        font-weight: 200;
+        font-size: 12px;
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form {
+    background: url("/img/form-bg.png") 19% no-repeat;
+}

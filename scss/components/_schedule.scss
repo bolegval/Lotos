@@ -1,0 +1,42 @@
+.schedule {
+    &__container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.table {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    width: 1420px;
+    height: 615px;
+    border-spacing: 2px;
+    border-collapse: collapse;
+
+    & td {
+        background-color: var(--color-white);
+    }
+
+    &__time {
+        font-weight: 700;
+        color: var(--main-color);
+        background-color: var(--color-white);
+    }
+    
+    &__link {
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: url("../img/down-arrow.png") center no-repeat, var(--gradient-top);
+        }
+    }
+}

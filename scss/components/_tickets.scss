@@ -1,0 +1,85 @@
+.tickets {
+    &__container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: url("/img/tickets-img.png") 17% no-repeat;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-basis: 66%;
+    }
+
+    &__info {
+
+        max-width: 555px;
+        padding-bottom: 96px;
+    }
+
+    &__list {
+        column-count: 2;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 10px 20px 40px;
+        margin-bottom: 10px;
+        font-weight: 300;
+        background-color: var(--color-white);
+
+        & span {
+            @include text-gradient;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+
+    &__cost {
+        max-width: 75%;
+        line-height: 2;
+    }
+
+    &__link {
+        @include button;
+        @include plus;
+        
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: var(--main-bg-color);
+
+        &::before {
+            background-color: #c9c4c3;
+        }
+        
+          &::after {
+            background-color: #c9c4c3;
+        }
+
+    &:hover {
+        @include button;
+        @include plus;
+        width: 40px;
+        height: 40px;
+    }
+
+    }
+
+    &__btn {
+        @include form-button;
+
+        width: 295px;
+        margin-top: 52px;
+
+        & span {
+            background: url("../img/checked.png") center no-repeat, var(--gradient-right);
+            background-blend-mode: normal;
+        }
+    }
+}

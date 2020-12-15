@@ -1,0 +1,56 @@
+.welcome {
+
+  &__container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("/img/welcom-bg.png") 17% no-repeat;
+  }
+
+}
+
+.content {
+  padding-bottom: 43px;
+  margin-left: auto;
+  margin-right: 111px;
+
+  &__title {
+    @include text-gradient;
+    
+    display: inline-block;
+    font-family: "Geometria-medium", sans-serif;
+    font-weight: 500;
+    font-size: 200px;
+    letter-spacing: 10px;
+    transform: translateX(-22%);
+  }
+
+  &__subtitle {
+    @include text-gradient;
+
+    display: inline-block;
+    font-size: 24px;
+    transform: rotate(-90deg) translateX(-18%);
+    transform-origin: left top 0;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    @include button;
+    @include plus;
+
+    margin-right: 27px;
+  }
+
+  &__text {
+    max-width: 320px;
+    font-family: "Geometria-Light", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+@mixin plus {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-white);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-white);
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,11 @@
+@mixin active($text) {
+    font-weight: 500;
+    color: initial;
+
+    &::before {
+        content: $text;
+        position: absolute;
+        left: -57%;
+        @include text-gradient;
+    }
+}

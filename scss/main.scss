@@ -1,0 +1,17 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "settings";
+
+/* Components */
+@import "./components/header";
+@import "./components/welcome";
+@import "./components/classes";
+@import "./components/trial-lesson";
+@import "./components/trainers";
+@import "./components/tickets";
+@import "./components/schedule";
+@import "./components/reviews";
+@import "./components/contacts";
+@import "./components/footer";

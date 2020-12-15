@@ -1,0 +1,107 @@
+.classes {
+    &__container {
+        height: 100vh;
+        display: flex;
+        align-self: flex-start;
+        background: url("/img/classes-img.png") 29% no-repeat;
+    }
+
+    &__logo {
+        margin-right: 111px;
+    }
+
+    &__list {
+        padding-top: 225px;
+        color: var(--link-color);
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        &--active {
+            @include active("Yoga — ");
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;  
+    }
+
+    &__description {
+        padding-top: 216px;
+        flex-basis: 53%;
+    }
+
+    &__title {
+        @include text-gradient;
+
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        margin-bottom: 46px;
+        font-size: 24px;
+        font-weight: 500;       
+    }
+
+    &__text {
+        max-width: 490px;
+        font-weight: 300;
+        line-height: 2;
+
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__btn {
+        @include form-button;
+
+        margin-top: 47px;
+
+        & span {
+            @include plus;
+        }
+    }
+}
+
+.activities {
+    display: flex;
+    padding-top: 108px;
+    margin-right: 73px;
+
+    &__title {
+        @include text-gradient;
+
+        margin-right: 7px;
+        font-weight: 500;
+    }
+
+    &__list {
+        color: var(--link-color);
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        &--active {
+            font-weight: 500;
+            color: initial;
+        }
+    }
+}

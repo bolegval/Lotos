@@ -1,0 +1,4 @@
+@mixin envelope {
+    background: url("../img/envelope.png") center no-repeat, var(--gradient-right);
+    background-blend-mode: normal;
+}

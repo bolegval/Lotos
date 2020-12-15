@@ -1,0 +1,19 @@
+@mixin form-button {
+    display: flex;
+    align-items: center;
+    width: 284px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    background-color: var(--main-color);
+
+    & span {
+        @include button;
+
+        display: inline-block;
+        margin-right: 22px;
+        background: var(--gradient-right);
+    }
+}
