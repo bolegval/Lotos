@@ -1,0 +1,31 @@
+@mixin burger {
+  position: relative;
+  left: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px;
+  width: 24px;
+  height: 16px;
+
+  &__line {
+    display: inline-flex;
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -4px;
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      background-color: var(--color-black);
+    }
+
+    &:last-child {
+      width: 14px;
+    }
+  }
+}
