@@ -335,7 +335,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/welcom-bg.png") 17% no-repeat;
+  background: url("../img/welcom-bg.png") 17% no-repeat;
 }
 
 .content {
@@ -427,7 +427,7 @@ ul {
   display: flex;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background: url("/img/classes-img.png") 29% no-repeat;
+  background: url("../img/classes-img.png") 29% no-repeat;
 }
 
 .classes__logo {
@@ -596,7 +596,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/trial.png") 14% no-repeat;
+  background: url("../img/trial.png") 14% no-repeat;
 }
 
 .trial-lesson__content {
@@ -705,7 +705,7 @@ ul {
 }
 
 .form {
-  background: url("/img/form-bg.png") 19% no-repeat;
+  background: url("../img/form-bg.png") 19% no-repeat;
 }
 
 .trainers__container {
@@ -861,7 +861,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/tickets-img.png") 17% no-repeat;
+  background: url("../img/tickets-img.png") 17% no-repeat;
 }
 
 .tickets__content {
@@ -1092,7 +1092,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/reviews.png") 5% no-repeat;
+  background: url("../img/reviews.png") 5% no-repeat;
 }
 
 .reviews__content {
@@ -1312,11 +1312,11 @@ ul {
 }
 
 .contacts__link--map::before {
-  background: url("/img/location.png") center no-repeat, var(--gradient-top);
+  background: url("../img/location.png") center no-repeat, var(--gradient-top);
 }
 
 .contacts__link--review::before {
-  background: url("/img/envelope.png") center no-repeat, var(--gradient-top);
+  background: url("../img/envelope.png") center no-repeat, var(--gradient-top);
 }
 
 .contacts__copyright {

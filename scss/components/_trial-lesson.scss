@@ -3,7 +3,7 @@
         height: 100vh;
         display: flex;
         justify-content: space-between;
-        background: url("/img/trial.png") 14% no-repeat;
+        background: url("../img/trial.png") 14% no-repeat;
     }
 
     &__content {
@@ -76,5 +76,5 @@
 }
 
 .form {
-    background: url("/img/form-bg.png") 19% no-repeat;
+    background: url("../img/form-bg.png") 19% no-repeat;
 }

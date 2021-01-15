@@ -63,13 +63,13 @@
         &--map {
             margin-bottom: 20px;
             &::before {
-                background: url("/img/location.png") center no-repeat, var(--gradient-top);
+                background: url("../img/location.png") center no-repeat, var(--gradient-top);
             }
         }
 
         &--review {
             &::before {
-                background: url("/img/envelope.png") center no-repeat, var(--gradient-top);
+                background: url("../img/envelope.png") center no-repeat, var(--gradient-top);
             }
         }
     }
